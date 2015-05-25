@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+        <link rel="stylesheet" href="style.css" />
+        <script src='script.js'></script>
+        <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+		<title></title>
+	</head>
+	<body>
+        <div class="container">
+            <h1 class="heading1">ToDo List</h1>
+            <form class="addToListForm">
+                <input type="text" name="listItemInput" class="listItemInput" />
+				<table>		
+					<tr> <!--<td><input type="text" name="listTimeAllotedInput" class="listTimeInput" value="15"/></td>-->
+					<td><label>Does this start at a certain time?<input type="text" name="listTimeScheduledInput" class="listTimeInput" /></label></td>
+					<td><label for="listTimeAllotedInput">How long will this take?</label>
+<select name="listTimeAllotedInput" id="listTimeAllotedInput">
+  <option value="5">5 minutes</option>
+  <option value="10">10 minutes</option>
+  <option value="15" selected>15 minutes</option>
+  <option value="20">20 minutes</option>
+  <option value="30">30 minutes</option>
+  <option value="45">45 minutes</option>
+  <option value="60">1 hour</option>
+  <option value="75">1 hour and 15 minutes</option>
+  <option value="90">1 hour and 30 minutes</option>
+  <option value="105">1 hour and 45 minutes</option>
+  <option value="120">2 hours</option>
+</select>
+<!-- 
+<script>
+$( "#listTimeAllotedInput" ).select();
+</script> --></td></tr>
+				</table>
+					
+				
+                <label for="listItemInput"><input type="submit" class="addToList" value="Add to List" /></label>
+            </form>
+        
+            <div class="listItems"></div>
+            
+            <ul class="info">
+                <li>Drag and drop items in your list to sort them.</li>
+                <li>Check items off the list when complete.</li>
+            </ul>
+        </div>
+        
+	</body>
+</html>
